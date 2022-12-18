@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="theme-color" content="#673AB6" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <title>Wind Wave</title>
+
+    <link rel="shortcut icon" href="./images/logo trasparent bg.png" type="image/x-icon" />
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./navbar.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./Footer.css">
+    <!-- bootstrap5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+</head>
+<body>
+    <!-- navbar -->
+    <nav class=" navbar navbar-expand-md fixed-top">
+        <div class="bg-white nav-container  container-lg">
+            <a class="navbar-brand" href="#">
+                <img src="./images/logo trasparent bg.png" alt="logo" />
+                <p class="d-inline-block mb-1">
+                    Wind Wave
+                </p>
+            </a>
+            <button class="navbar-toggler special-border " type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-top h-50" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <a class="navbar-brand" href="#"><img src="./images/logo trasparent bg.png"
+                            alt="logo" />
+                        <p class="d-inline-block mb-1">
+                           Wind Wave
+                        </p>
+                    </a>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body justify-content-end text-center">
+                    <ul class="navbar-nav gap-3">
+                        <li class="nav-item">
+                            <a class="special nav-link fw-bold" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#challenge">Challenge</a>
+                        </li>
+                        <a class="contact-us button-primary" href="#results">Results
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- end navbar -->
+    <!-- hero section -->
+    <section-1>
+        <div class="hero-image row flex-row justify-content-center align-content-center m-0 ">
+            <a href="#challenge"  class="challenge my-3 text-center button-primary">Challenge</a>
+        </div>
+    </section-1>
+    <!-- end  hero section -->
+ <!-- overview -->
+    <section-2 id="about">
+        <div class="p-5 m-0">
+            <div class="heading row my-3 mb-5 flex-wrap flex-xl-nowrap justify-content-around flex-column flex-xl-row">
+                <span class="align-self-start align-self-xl-center"></span>
+                <h2 class="text-center text-white align-self-center">Wind Wave</h2>
+                <span class="align-self-end align-self-xl-center"></span>
+            </div>
+            <p class="text-center text-white">
+                Menya STEM School 
+                <br>
+                26307
+                <br>
+                2022/2023
+                <br>
+                Grade 12-semester (1)
+                <br>
+                <a class="results-view" href="#results">Results</a>
+            </p>
+        </div>
+    </section-2>
+
+ <!-- Results -->
+    <section-3 id="results">
+        <div class="p-5 m-0">
+            <div class="heading-2 row my-3 mb-5 flex-wrap flex-xl-nowrap justify-content-around flex-column flex-xl-row">
+                <span class="align-self-start align-self-xl-center"></span>
+                <h2 class="text-center align-self-center">Sensors Readings</h2>
+                <span class="align-self-end align-self-xl-center"></span>
+            </div>
+            <h3 class="text-center align-self-center">Ultrasonic Sensor Readings</h3>
+            <br>
+            <p class="text-center ">
+             Read the length of the water on the plastic box,
+               <br>
+              simulation to the increasing in sea level.
+                <br>
+                <br>
+                Unit: CM
+            </p>
+           <div class="align-item-cneter chart">
+            <iframe class="d-flex justify-content-center"  style="border: 1px solid #003459; width: 430px; height: 260px;"
+                src="https://thingspeak.com/channels/1978782/charts/2?bgcolor=%23f5f5f5&color=%23003459&dynamic=true&results=100&title=Ultrasonic+Readings&type=line&xaxis=Time%28S%29&yaxis=Distance%28CM%29&yaxismin=0"></iframe>
+           </div>
+            <br id="readings">
+            <h3 class="text-center align-self-center"> Reed switch Sensor Readings</h3>
+            <br>
+            <p class="text-center ">
+            Read the speed of the fan by detecting the magnet that attached in the fan,
+            <br>
+            simulation to the increasing in the wind speed.
+                <br>
+                <br>
+                Unit: M/S
+            </p>
+            <div class="align-item-cneter chart">
+                <iframe class="d-flex justify-content-center" style="border: 1px solid #003459; width: 430px; height: 260px;"
+                    src="https://thingspeak.com/channels/1978782/charts/1?bgcolor=%23f5f5f5&color=%23d62020&dynamic=true&results=100&title=Reed+Switch+Readings&type=line&xaxis=Time%28S%29&yaxis=Speed%28M%2Fs%29&yaxismin=-1"> </iframe>
+            </div>
+            
+        </div>
+    </section-3>
+    <!-- Our Challenge -->
+    <section-4 id="challenge">
+        <div class="p-5 m-0">
+            <div class="heading-3 row my-3 mb-5 flex-wrap flex-xl-nowrap justify-content-around flex-column flex-xl-row">
+                <span class="align-self-start align-self-xl-center"></span>
+                <h2 class="text-center text-white align-self-center">Our Challenge</h2>
+                <span class="align-self-end align-self-xl-center"></span>
+            </div>
+            <p class="text-center text-white">
+                1) Climate change is a current global issue that should be addressed in all aspects of our lives.
+                <br>
+                <br>
+                2) Communication, internet of things (IoT), mobile devices, developing new better sensing technologies, 
+                <br>
+                and hardware interfaces have great potential in reducing negative impacts of climate change.
+            </p>
+        </div>
+    </section-4>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col col justify-content-end text-center">
+                    <h4>Site map</h4>
+                    <ul>
+                        <li><a class="fw-bold" href="#">Home</a></li>
+                        <li><a href="#challenge">Challenge</a></li>
+                        <li><a href="#results">Results</a></li>
+                    </ul>
+                </div>
+            </div>
+            <br>
+            <hr>
+            <span class="line"></span>
+            <div class="rights">
+                <h6>Copyright &copy; 2022<span id="year"></span> All Rights Reserved | Wind Wave</h6>
+                <h6 style="float: right;">Made By | Mohamed Emad Mohamed</h6>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+    <!-- ionicon -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+    <!-- boostrap5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+    
+</html>
